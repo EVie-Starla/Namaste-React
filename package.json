@@ -1,0 +1,23 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste-React ",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EVie-Starla/Namaste-React.git"
+  },
+  "keywords": [
+    "Namaste-React",
+    "React"
+  ],
+  "author": "Esther Vincy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EVie-Starla/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/EVie-Starla/Namaste-React#readme"
+}
