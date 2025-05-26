@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.nav-items > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-items > ul > li{
+    padding: 0 2em;
+}
+.nav-items>ul>li>button{
+    all: unset;
+}
+
+.logo{
+    height: 5rem;
+}
+
+.resto-card-container{
+    display: flex;
+    justify-content:space-around;
+    column-gap:.3rem;
+    row-gap: 2rem;
+    flex-flow: wrap row;
+}
+
+/* resto-card Component */
+
+.resto-card{
+    display: flex;
+    flex-direction: column;
+    height:18rem;
+    width:14rem;
+    padding: .5em;
+    background-color: beige;
+    border-radius: 10%;
+    overflow-y: hidden;
+}
+
+.resto-card:hover{
+    border:1px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.logo,.nav-items > ul > li:hover{
+    cursor: pointer;
+    color:rgb(234, 145, 11);
+}
+
+.resto-card > img{
+    border:.5px solid black;
+    width: 100%;
+    height:70%; 
+    border-radius: 10%;
+}
+
+/* Body container */
+.body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem;
+}
+
+.filters{
+    display: flex;
+    gap:.2rem;
+}
+
+.filter-reset{
+    background-color: red;
+    color: white;
+    padding: .3em;
+}
+.top-restaurants:focus{
+    background-color:beige;
+}
+.top-restaurants{
+    padding: .5em;
+    background-color: whitesmoke;
+}
+.search{
+    position: relative;
+}
+
+.suggestion-list{
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 19.4%;
+    list-style: none;
+    background-color: white;
+    max-width: max-content;
+    border: 1px solid black;
+}
+
+.suggestion-item{
+    border: 1px solid #a8a3a3;
+    cursor: pointer;
+}
+
+.suggestion-item:is(:hover,:active){
+    background-color: beige;
+}
+
+.suggestion-item.active{
+    background-color: rgb(248, 248, 214);
+}
+
+.shimmer-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    column-gap:.5rem;
+    row-gap: 5rem;
+    margin: 3rem;
+}
+
+.shimmer-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    height:16rem;
+    width:13rem;
+    padding: .5em;
+}
+.shimmer-card-img,.shimmer-card-description1,.shimmer-card-description2{
+    background-color: #dfdede;
+    border-radius: 10px;
+}
+.shimmer-card-img{
+    height: 80%;
+}
+.shimmer-card-description1{
+    height:5% ;
+    width: 60%;
+}
+.shimmer-card-description2{
+    height:5% ;
+    width: 80%;
+}

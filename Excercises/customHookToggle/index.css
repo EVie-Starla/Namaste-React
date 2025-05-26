@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toggle-btn{
+    height: 3rem;
+    width: 5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-btn:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.toggle-btn:active{
+    transform: scale(0.97);
+}

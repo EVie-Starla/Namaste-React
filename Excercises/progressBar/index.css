@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.progress-bar-container{
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    height: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ddd;
+    font-weight: bold;
+}
+.progress-bar{
+    height: 100%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+.progress-bar-text{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.increase-btn,.decrease-btn{
+    width: 50px;
+    margin-right: 20px;
+}
