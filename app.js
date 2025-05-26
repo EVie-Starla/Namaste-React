@@ -28,8 +28,19 @@ const greeting =React.createElement("h1",{
 
 //JSX
 //attributes are written in camelCase in JSX
+const CompInsideElement = () => (
+    <div>
+        <h1>blaw</h1>
+        <h2>blaw blaw</h2>
+ </div>
+);
+
+const reactElem=<CompInsideElement/>/*React component inside a reactElement*/
 const reactElement=<span>❤❤❤</span>
-const jsxHeading =<h1 id="greet" className="greeting" tabIndex="5">Hello{reactElement} From Namaste React!🚀</h1> ;//JSX
+const jsxHeading = (<h1 id="greet" className="greeting" tabIndex="5">Hello{reactElement} From Namaste React!🚀
+    <CompInsideElement /> {/*React component inside a reactElement*/}
+    </h1>
+);//JSX
 
 
 //console.log(heading)//displays an object on developer console
@@ -61,14 +72,17 @@ const jsInsideJsx="Running JS expression inside JSX"
 const num=67;
 const HeadingComponent3=function(){
     return(
-    <div><HeadingComponent2/>
+        <div>
+            <HeadingComponent2/>
+            {HeadingComponent2()}
+            <HeadingComponent2></HeadingComponent2>{/*This is same as the above 2 lines of code */}
     <h2>{jsInsideJsx}</h2>
     {num}
     <h2>{100%2}</h2>
-    {console.log("Running JS inside JSX")}
+    {console.log("Running JS inside JSX")}{/*JSX sanitizes the data the data that comes from an API in order to prevent cross-site scripting attacks*/}
     {parent}{/*reactElement(is also a JS Variable) inside ReactComponent*/}
     <h1>This is a ReactComponent that contains nested JSX elements</h1>
-    {jsxHeading}
+            {jsxHeading}
     </div>
     );
 };
